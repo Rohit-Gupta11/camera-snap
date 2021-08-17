@@ -1,0 +1,16 @@
+{
+  "name": "electron-camera",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest", 
+    "start": "electron ."
+  },
+  "author": "Rohit-Gupta",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^13.1.9",
+    "electron-reload": "^2.0.0-alpha.1"
+  }
+}
