@@ -20,7 +20,7 @@ body{
     justify-content: center;
 }
 
-#snap{
+.snap{
     width: 150px;
     height: 60px;
     font-size: large;
@@ -28,4 +28,8 @@ body{
     border: 2px solid green;
     margin: 20px auto;
     color: white;
+}
+
+video, canvas{
+    border: 2px solid black;
 }

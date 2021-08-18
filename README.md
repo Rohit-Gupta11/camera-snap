@@ -24,10 +24,14 @@ Install dependencies
   npm install
 ```
 
+Compile react source code
+
+```bash
+  npm run watch
+```
+
 Start the app
 
 ```bash
   npm run start
 ```
-
-  
