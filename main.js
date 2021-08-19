@@ -13,6 +13,7 @@ function createWindow() {
             worldSafeExecuteJavaScript: true,
             contextIsolation: false,
             enableRemoteModule: true,
+            devTools: true
         },
         autoHideMenuBar: true
     })

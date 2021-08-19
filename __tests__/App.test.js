@@ -1,6 +1,6 @@
 import React from 'react'
 import { render, cleanup, screen, fireEvent } from '@testing-library/react'
-import App from '../App'
+import App from '../src/js/App'
 import 'jest-canvas-mock'
 
 afterEach(cleanup)
@@ -14,7 +14,7 @@ describe('Checking if App is working properly', () => {
         value: mockMediaDevices,
     });
 
-    window.HTMLMediaElement.prototype.play = () => {}
+    window.HTMLMediaElement.prototype.play = () => { }
 
     test('should have video screen', () => {
         render(<App />)
@@ -25,7 +25,7 @@ describe('Checking if App is working properly', () => {
         render(<App />)
         expect(screen.getByTestId('canvas')).toBeInTheDocument
     })
-
+    
     test('should have take photo button', () => {
         render(<App />)
         expect(screen.getByTestId('snap')).toBeInTheDocument
@@ -33,9 +33,7 @@ describe('Checking if App is working properly', () => {
 
     test('should work on clicking take photo button', () => {
         render(<App />)
-        
         expect(screen.getByTestId('snap')).toBeInTheDocument
-        
         expect(fireEvent.click(screen.getByTestId('snap'))).toBe(true)
 
     })
